@@ -12,14 +12,7 @@ export default defineConfig({
   plugins: [
     vue(),
     cssInjectedByJsPlugin(),
-    vueJsx(),
-    federation({
-      name: "remoteHabitsMfe",
-      filename: "remoteHabitsMfe.js",
-      exposes: {
-        "./HabitsMfe": "./src/HabitsMfe",
-      },
-    }),
+    vueJsx()
   ],
   resolve: {
     alias: {
